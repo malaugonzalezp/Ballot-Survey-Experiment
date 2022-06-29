@@ -1,3 +1,3 @@
 # Ballot-Survey-Experiment
 
-Welcome to our Ballor Survey Project.
+Welcome to our Ballot Survey Project.
