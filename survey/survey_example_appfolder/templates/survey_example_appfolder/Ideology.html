@@ -1,0 +1,77 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<br>
+<h2> Survey Test </h2>
+<hr>
+Now we will ask some questions about your ideology:
+
+<br>
+
+<br>
+<p><b>In der Politik wird gelegentlich von "links" und "rechts".
+    Wo würden Sie sich auf dieser Skala einordnen, wobei 0 links und 10 rechts bedeutet?</b></p>
+
+<input type="radio" name="ba_positioning" value="1" /> 0 Links
+<br>
+<input type="radio" name="ba_positioning" value="2" /> 1
+<br>
+<input type="radio" name="ba_positioning" value="3" /> 2
+<br>
+<input type="radio" name="ba_positioning" value="4" /> 3
+<br>
+<input type="radio" name="ba_positioning" value="5" /> 4
+<br>
+<input type="radio" name="ba_positioning" value="6" /> 5
+<br>
+<input type="radio" name="ba_positioning" value="7" /> 6
+<br>
+<input type="radio" name="ba_positioning" value="8" /> 7
+<br>
+<input type="radio" name="ba_positioning" value="9" /> 8
+<br>
+<input type="radio" name="ba_positioning" value="10" /> 9
+<br>
+<input type="radio" name="ba_positioning" value="11" /> 10 Rechts
+<br>
+
+
+<br>
+<p><b>Wo würden Sie [Ihre Partei] auf dieser Skala ansiedeln, auf der 0 links und 10 rechts bedeutet?</b></p>
+
+<input type="radio" name="ba_party_pos" value="1" /> 0 Links
+<br>
+<input type="radio" name="ba_party_pos" value="2" /> 1
+<br>
+<input type="radio" name="ba_party_pos" value="3" /> 2
+<br>
+<input type="radio" name="ba_party_pos" value="4" /> 3
+<br>
+<input type="radio" name="ba_party_pos" value="5" /> 4
+<br>
+<input type="radio" name="ba_party_pos" value="6" /> 5
+<br>
+<input type="radio" name="ba_party_pos" value="7" /> 6
+<br>
+<input type="radio" name="ba_party_pos" value="8" /> 7
+<br>
+<input type="radio" name="ba_party_pos" value="9" /> 8
+<br>
+<input type="radio" name="ba_party_pos" value="10" /> 9
+<br>
+<input type="radio" name="ba_party_pos" value="11" /> 10 Rechts
+<br>
+
+
+<br>
+
+<button class="otree-btn-next btn btn-primary next-button otree-next-button">
+    Weiter
+</button>
+
+{% endblock %}

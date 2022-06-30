@@ -1,0 +1,146 @@
+
+{%block style %}
+
+
+<style>
+.otree-title{
+    background: white;
+    text-align: center;
+    display:none;
+}
+
+    .extable th {  width:150px; background-color: lightgrey; padding: 6px; border: solid 1px ;}
+    .extable td { padding: 6px; border: solid 1px ; background-color: white }
+    .extable th.box {width: 15%}
+
+</style>
+
+{% endblock %}
+
+{% block title %}
+
+Ballot
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+<h1>Ballot Test with Table</h1>
+
+<br>
+
+Please take a look at the following ballot:
+
+<br>
+<br>
+
+<table class ="extable">
+
+            <thead>
+                    <tr>
+                        <th class="box">  </th>
+                        <th>Name</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Michael Kramer </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Niels Connemann </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Andreas Verlinden </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Sonja Felser </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Dietmar Gerdes </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Linda Hardt </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Karsten Hofmann </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Markus Koeppen </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Lisa Weber </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Manuela Kluckert </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Dietmar Seitzl </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Dagmar Stecker </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Alexander von Willbrandt </td>
+                    </tr>
+                    <tr>
+                        <td>&#9744;</td>
+                        <td> Emma Schneider </td>
+                    </tr>
+            </tbody>
+ </table>
+
+<br>
+<p><b>Which candidate would you vote for?</b></p>
+
+<input type="radio" name="ba_ballot1" value="1" /> Michael Kramer
+<br>
+<input type="radio" name="ba_ballot1" value="2" /> Niels Connemann
+<br>
+<input type="radio" name="ba_ballot1" value="3" /> Andreas Verlinden
+<br>
+<input type="radio" name="ba_ballot1" value="4" /> Sonja Felser
+<br>
+<input type="radio" name="ba_ballot1" value="5" /> Dietmar Gerdes
+<br>
+<input type="radio" name="ba_ballot1" value="6" /> Linda Hardt
+<br>
+<input type="radio" name="ba_ballot1" value="7" /> Karsten Hofmann
+<br>
+<input type="radio" name="ba_ballot1" value="8" /> Markus Koeppen
+<br>
+<input type="radio" name="ba_ballot1" value="9" /> Lisa Weber
+<br>
+<input type="radio" name="ba_ballot1" value="10" /> Manuela Kluckert
+<br>
+<input type="radio" name="ba_ballot1" value="11" /> Dietmar Seitzl
+<br>
+<input type="radio" name="ba_ballot1" value="12" /> Dagmar Stecker
+<br>
+<input type="radio" name="ba_ballot1" value="13" /> Alexander von Wilbrandt
+<br>
+<input type="radio" name="ba_ballot1" value="14" /> Emma Schneider
+
+<br>
+
+
+<br>
+<hr>
+
+ <button class="otree-btn-next btn btn-primary next-button otree-next-button">
+    Weiter
+</button>
+{% endblock %}

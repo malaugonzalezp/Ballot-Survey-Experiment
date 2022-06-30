@@ -1,0 +1,60 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<br>
+<h2> Survey Test </h2>
+<hr>
+Some demographic information about you:
+
+<br>
+
+{{ formfield "please_state_your_age"}}
+
+
+<br>
+<p><b>What is the highest level of education that you completed?</b></p>
+<input type="radio" name="ba_education" value="1" /> None or primary education
+<br>
+<input type="radio" name="ba_education" value="2" /> Secondary education
+<br>
+<input type="radio" name="ba_education" value="3" /> Higher non-university education
+<br>
+<input type="radio" name="ba_education" value="4" /> Higher university education
+<br>
+<input type="radio" name="ba_education" value="5" /> Don't know
+<br>
+<input type="radio" name="ba_education" value="6" /> I prefer not to say
+<br>
+
+<br>
+
+{{ formfield "please_state_your_postal_code"}}
+
+
+<br>
+<p><b>What is your gender?</b></p>
+<input type="radio" name="ba_gender" value="1" /> Male
+<br>
+<input type="radio" name="ba_gender" value="2" /> Female
+<br>
+<input type="radio" name="ba_gender" value="3" /> Diverse
+<br>
+<input type="radio" name="ba_gender" value="4" /> Prefer not to say
+<br>
+<input type="radio" name="ba_gender" value="5" /> Other
+<br>
+<br>
+
+
+<input type="hidden" name="ba_hidden_input">
+
+<button class="otree-btn-next btn btn-primary next-button otree-next-button">
+    Weiter
+</button>
+
+{% endblock %}

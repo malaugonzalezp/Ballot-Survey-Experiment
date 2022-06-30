@@ -1,0 +1,69 @@
+{%block style %}
+
+
+<style>
+.otree-title{
+    background: white;
+    text-align: center;
+    display:none;
+}
+</style>
+
+{% endblock %}
+
+{% block title %}
+
+Ballot
+{% endblock %}
+
+{% block content %}
+
+<h1>Ballot Test with Picture</h1>
+
+<br>
+
+<p>Please take a look at the following ballot:</p>
+
+<img   width="50%" height="50%" src="{% static 'images/OfficialBallot.png' %}" />
+<br>
+
+<br>
+<p><b>Which candidate would you vote for?</b></p>
+
+<input type="radio" name="ba_ballot" value="1" /> Michael Kramer
+<br>
+<input type="radio" name="ba_ballot" value="2" /> Niels Connemann
+<br>
+<input type="radio" name="ba_ballot" value="3" /> Andreas Verlinden
+<br>
+<input type="radio" name="ba_ballot" value="4" /> Sonja Felser
+<br>
+<input type="radio" name="ba_ballot" value="5" /> Dietmar Gerdes
+<br>
+<input type="radio" name="ba_ballot" value="6" /> Linda Hardt
+<br>
+<input type="radio" name="ba_ballot" value="7" /> Karsten Hofmann
+<br>
+<input type="radio" name="ba_ballot" value="8" /> Markus Koeppen
+<br>
+<input type="radio" name="ba_ballot" value="9" /> Lisa Weber
+<br>
+<input type="radio" name="ba_ballot" value="10" /> Manuela Kluckert
+<br>
+<input type="radio" name="ba_ballot" value="11" /> Dietmar Seitzl
+<br>
+<input type="radio" name="ba_ballot" value="12" /> Dagmar Stecker
+<br>
+<input type="radio" name="ba_ballot" value="13" /> Alexander von Wilbrandt
+<br>
+<input type="radio" name="ba_ballot" value="14" /> Emma Schneider
+
+<br>
+
+<br>
+<hr>
+
+ <button class="otree-btn-next btn btn-primary next-button otree-next-button">
+    Weiter
+</button>
+{% endblock %}
