@@ -5,7 +5,6 @@ from otree.api import (
     BaseSubsession,
     BaseGroup,
     BasePlayer,
-    Currency as c,
     currency_range,
 )
 
@@ -22,13 +21,9 @@ import random
 
 class Subsession(BaseSubsession):
     def creating_session(self):
-        '''this is a function by otree (same can not be changed)
-        which is creating a new subsession. Any variables that are needed to be custom
-        (so declaring it in a different way before) are created here'''
+
         for p in self.get_players():
-            # here we want to declare the players to different groups (2 in total)
-            # we use a python function here from 'random' we imported earlier
-            p.group_assignment = random.Random().randint(0, 1)
+            p.group_assignment = random.Random().randint(0, 1, 2, 3, 4, 5)
 
 
 class Group(BaseGroup):
@@ -38,8 +33,15 @@ class Group(BaseGroup):
 class Player(BasePlayer):
 
     # Variables in order
+    group_assignment = models.IntegerField()
+    ba_ballot0 = models.IntegerField(initial=-999)
     ba_ballot1 = models.IntegerField(initial=-999)
-    ba_ballot = models.IntegerField(initial=-999)
+    ba_ballot2 = models.IntegerField(initial=-999)
+    ba_ballot3 = models.IntegerField(initial=-999)
+    ba_ballot_pic1 = models.IntegerField(initial=-999)
+    ba_ballot_pic2 = models.IntegerField(initial=-999)
+    ba_ballot_pic3 = models.IntegerField(initial=-999)
+    ba_ballot_pic4 = models.IntegerField(initial=-999)
     please_state_your_age = models.IntegerField(max=110, min=1)
     ba_education = models.IntegerField(initial=-999)
     please_state_your_postal_code = models.IntegerField(max=99999, min=10000)
