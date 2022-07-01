@@ -23,7 +23,7 @@ class Subsession(BaseSubsession):
     def creating_session(self):
 
         for p in self.get_players():
-            p.group_assignment = random.Random().randint(0, 1, 2, 3, 4, 5)
+            p.group_assignment = random.Random().randint(0, 5)
 
 
 class Group(BaseGroup):
