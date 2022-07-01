@@ -6,24 +6,6 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
-
-    var group_assignment = {{ group_assignment }};
-
-    //depending if player is assigned 4 or 5, they will get Ideology page before or after ballot
-
-    var div_group4 = document.getElementById('group4');
-    var div_group5 = document.getElementById('group5');
-
-    if (group_assignment == 4) {
-        div_group0.style.display = "block";
-    }
-    if (group_assignment == 5) {
-        div_group1.style.display = "block";
-    }
-
-</script>
-
 {% endblock %}
 
 {% block content %}

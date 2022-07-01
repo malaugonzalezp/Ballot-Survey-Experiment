@@ -12,16 +12,18 @@ class Welcome(Page):
 
 class Ballot1(Page):
     form_model = Player
-    form_fields = ['ba_ballot0', 'ba_ballot1', 'ba_ballot2', 'ba_ballot3']
+    form_fields = ['ba_ballot1']
+    def vars_for_template(self):
+        return {'ba_group_assignment': safe_json(self.player.ba_group_assignment)}
 
 #ballot as a picture
 
 class Ballot2(Page):
     form_model = Player
-    form_fields = ['ba_ballot_pic1', 'ba_ballot_pic2', 'ba_ballot_pic3', 'ba_ballot_pic4']
+    form_fields = ['ba_ballot_pic1']
+    def vars_for_template(self):
+        return {'ba_group_assignment': safe_json(self.player.ba_group_assignment)}
 
-class Ballot(Page):
-    form_model = Player
 
 #group 4 will get ideology page before ballot
 
@@ -30,7 +32,8 @@ class Ideology1(Page):
     form_fields = ['ba_positioning', 'ba_party_pos']
 
     def is_displayed(self):
-        return self.player.group_assignment == 4
+        return self.player.ba_ideology_assignment == 0
+    
 
 #group 5 will get ideology page after ballot
 
@@ -39,7 +42,7 @@ class Ideology2(Page):
     form_fields = ['ba_positioning', 'ba_party_pos']
 
     def is_displayed(self):
-        return self.player.group_assignment == 5
+        return self.player.ba_ideology_assignment == 1
 
 class DemoPage(Page):
     form_model = Player
@@ -56,6 +59,5 @@ page_sequence = [Welcome,
                 Ballot2,
                 Ideology1,
                 Ideology2,
-                Ballot,
                 DemoPage,
                 EndPage]

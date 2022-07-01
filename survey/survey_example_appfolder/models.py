@@ -23,7 +23,8 @@ class Subsession(BaseSubsession):
     def creating_session(self):
 
         for p in self.get_players():
-            p.group_assignment = random.Random().randint(0, 5)
+            p.ba_group_assignment = random.Random().randint(0, 3)
+            p.ba_ideology_assignment = random.Random().randint(0,1)
 
 
 class Group(BaseGroup):
@@ -33,15 +34,16 @@ class Group(BaseGroup):
 class Player(BasePlayer):
 
     # Variables in order
-    group_assignment = models.IntegerField()
-    ba_ballot0 = models.IntegerField(initial=-999)
+    ba_group_assignment = models.IntegerField()
+    ba_ideology_assignment = models.IntegerField()
     ba_ballot1 = models.IntegerField(initial=-999)
-    ba_ballot2 = models.IntegerField(initial=-999)
-    ba_ballot3 = models.IntegerField(initial=-999)
+    # ba_ballot1 = models.IntegerField(initial=-999)
+    # ba_ballot2 = models.IntegerField(initial=-999)
+    # ba_ballot3 = models.IntegerField(initial=-999)
     ba_ballot_pic1 = models.IntegerField(initial=-999)
-    ba_ballot_pic2 = models.IntegerField(initial=-999)
-    ba_ballot_pic3 = models.IntegerField(initial=-999)
-    ba_ballot_pic4 = models.IntegerField(initial=-999)
+    # ba_ballot_pic2 = models.IntegerField(initial=-999)
+    # ba_ballot_pic3 = models.IntegerField(initial=-999)
+    # ba_ballot_pic4 = models.IntegerField(initial=-999)
     please_state_your_age = models.IntegerField(max=110, min=1)
     ba_education = models.IntegerField(initial=-999)
     please_state_your_postal_code = models.IntegerField(max=99999, min=10000)

@@ -8,7 +8,7 @@
 {% block scripts %}
 <script>
 
-    var group_assignment = {{ group_assignment }};
+    var ba_group_assignment = {{ ba_group_assignment }};
 
     //depending on in which group a player is assigned, they will get a different ballot
 
@@ -17,16 +17,16 @@
     var div_group2 = document.getElementById('group2');
     var div_group3 = document.getElementById('group3');
 
-    if (group_assignment == 0) {
+    if (ba_group_assignment == 0) {
         div_group0.style.display = "block";
     }
-    if (group_assignment == 1) {
+    if (ba_group_assignment == 1) {
         div_group1.style.display = "block";
     }
-    if (group_assignment == 2) {
+    if (ba_group_assignment == 2) {
         div_group2.style.display = "block";
     }
-    if (group_assignment == 3) {
+    if (ba_group_assignment == 3) {
         div_group3.style.display = "block";
     }
 
@@ -59,6 +59,7 @@ Ballot
 {% endblock %}
 
 {% block content %}
+{{ formfield_errors 'ba_ballot1' }}
 
 <br>
 
@@ -146,33 +147,33 @@ Please take a look at the following ballot:
 <br>
 <p><b>Which candidate would you vote for?</b></p>
 
-<input type="radio" name="ba_ballot0" value="1" /> Michael Kramer
+<input type="radio" name="ba_ballot1" value="1" /> Michael Kramer
 <br>
-<input type="radio" name="ba_ballot0" value="2" /> Niels Connemann
+<input type="radio" name="ba_ballot1" value="2" /> Niels Connemann
 <br>
-<input type="radio" name="ba_ballot0" value="3" /> Andreas Verlinden
+<input type="radio" name="ba_ballot1" value="3" /> Andreas Verlinden
 <br>
-<input type="radio" name="ba_ballot0" value="4" /> Sonja Felser
+<input type="radio" name="ba_ballot1" value="4" /> Sonja Felser
 <br>
-<input type="radio" name="ba_ballot0" value="5" /> Dietmar Gerdes
+<input type="radio" name="ba_ballot1" value="5" /> Dietmar Gerdes
 <br>
-<input type="radio" name="ba_ballot0" value="6" /> Linda Hardt
+<input type="radio" name="ba_ballot1" value="6" /> Linda Hardt
 <br>
-<input type="radio" name="ba_ballot0" value="7" /> Karsten Hofmann
+<input type="radio" name="ba_ballot1" value="7" /> Karsten Hofmann
 <br>
-<input type="radio" name="ba_ballot0" value="8" /> Markus Koeppen
+<input type="radio" name="ba_ballot1" value="8" /> Markus Koeppen
 <br>
-<input type="radio" name="ba_ballot0" value="9" /> Lisa Weber
+<input type="radio" name="ba_ballot1" value="9" /> Lisa Weber
 <br>
-<input type="radio" name="ba_ballot0" value="10" /> Manuela Kluckert
+<input type="radio" name="ba_ballot1" value="10" /> Manuela Kluckert
 <br>
-<input type="radio" name="ba_ballot0" value="11" /> Dietmar Seitzl
+<input type="radio" name="ba_ballot1" value="11" /> Dietmar Seitzl
 <br>
-<input type="radio" name="ba_ballot0" value="12" /> Dagmar Stecker
+<input type="radio" name="ba_ballot1" value="12" /> Dagmar Stecker
 <br>
-<input type="radio" name="ba_ballot0" value="13" /> Alexander von Wilbrandt
+<input type="radio" name="ba_ballot1" value="13" /> Alexander von Wilbrandt
 <br>
-<input type="radio" name="ba_ballot0" value="14" /> Emma Schneider
+<input type="radio" name="ba_ballot1" value="14" /> Emma Schneider
 
 <br>
 
@@ -377,33 +378,33 @@ Please take a look at the following ballot:
 <br>
 <p><b>Which candidate would you vote for?</b></p>
 
-<input type="radio" name="ba_ballot2" value="1" /> Michael Kramer
+<input type="radio" name="ba_ballot1" value="1" /> Michael Kramer
 <br>
-<input type="radio" name="ba_ballot2" value="2" /> Zeynep Aslan
+<input type="radio" name="ba_ballot1" value="2" /> Zeynep Aslan
 <br>
-<input type="radio" name="ba_ballot2" value="3" /> Niels Connemann
+<input type="radio" name="ba_ballot1" value="3" /> Niels Connemann
 <br>
-<input type="radio" name="ba_ballot2" value="4" /> Mustafa Ahmed
+<input type="radio" name="ba_ballot1" value="4" /> Mustafa Ahmed
 <br>
-<input type="radio" name="ba_ballot2" value="5" /> Andreas Verlinden
+<input type="radio" name="ba_ballot1" value="5" /> Andreas Verlinden
 <br>
-<input type="radio" name="ba_ballot2" value="6" /> Sonja Felser
+<input type="radio" name="ba_ballot1" value="6" /> Sonja Felser
 <br>
-<input type="radio" name="ba_ballot2" value="7" /> Zofia Wójcik
+<input type="radio" name="ba_ballot1" value="7" /> Zofia Wójcik
 <br>
-<input type="radio" name="ba_ballot2" value="8" /> Dietmar Gerdes
+<input type="radio" name="ba_ballot1" value="8" /> Dietmar Gerdes
 <br>
-<input type="radio" name="ba_ballot2" value="9" /> Linda Hardt
+<input type="radio" name="ba_ballot1" value="9" /> Linda Hardt
 <br>
-<input type="radio" name="ba_ballot2" value="10" /> Mohamed Özdemir
+<input type="radio" name="ba_ballot1" value="10" /> Mohamed Özdemir
 <br>
-<input type="radio" name="ba_ballot2" value="11" /> Jekaterina Ljudmilla
+<input type="radio" name="ba_ballot1" value="11" /> Jekaterina Ljudmilla
 <br>
-<input type="radio" name="ba_ballot2" value="12" /> Arne Löffer
+<input type="radio" name="ba_ballot1" value="12" /> Arne Löffer
 <br>
-<input type="radio" name="ba_ballot2" value="13" /> Shlomo Rosenkranz
+<input type="radio" name="ba_ballot1" value="13" /> Shlomo Rosenkranz
 <br>
-<input type="radio" name="ba_ballot2" value="14" /> Chaim Friedländer
+<input type="radio" name="ba_ballot1" value="14" /> Chaim Friedländer
 
 <br>
 
@@ -491,33 +492,33 @@ Please take a look at the following ballot:
 <br>
 <p><b>Which candidate would you vote for?</b></p>
 
-<input type="radio" name="ba_ballot3" value="1" /> Mustafa Ahmed
+<input type="radio" name="ba_ballot1" value="1" /> Mustafa Ahmed
 <br>
-<input type="radio" name="ba_ballot3" value="2" /> Jekaterina Ljudmilla
+<input type="radio" name="ba_ballot1" value="2" /> Jekaterina Ljudmilla
 <br>
-<input type="radio" name="ba_ballot3" value="3" /> Linda Hardt
+<input type="radio" name="ba_ballot1" value="3" /> Linda Hardt
 <br>
-<input type="radio" name="ba_ballot3" value="4" /> Mohamed Özdemir
+<input type="radio" name="ba_ballot1" value="4" /> Mohamed Özdemir
 <br>
-<input type="radio" name="ba_ballot3" value="5" /> Dietmar Gerdes
+<input type="radio" name="ba_ballot1" value="5" /> Dietmar Gerdes
 <br>
-<input type="radio" name="ba_ballot3" value="6" /> Sonja Felser
+<input type="radio" name="ba_ballot1" value="6" /> Sonja Felser
 <br>
-<input type="radio" name="ba_ballot3" value="7" /> Zeynep Aslan
+<input type="radio" name="ba_ballot1" value="7" /> Zeynep Aslan
 <br>
-<input type="radio" name="ba_ballot3" value="8" /> Chaim Friedländer
+<input type="radio" name="ba_ballot1" value="8" /> Chaim Friedländer
 <br>
-<input type="radio" name="ba_ballot3" value="9" /> Andreas Verlinden
+<input type="radio" name="ba_ballot1" value="9" /> Andreas Verlinden
 <br>
-<input type="radio" name="ba_ballot3" value="10" /> Shlomo Rosenkranz
+<input type="radio" name="ba_ballot1" value="10" /> Shlomo Rosenkranz
 <br>
-<input type="radio" name="ba_ballot3" value="11" /> Niels Connemann
+<input type="radio" name="ba_ballot1" value="11" /> Niels Connemann
 <br>
-<input type="radio" name="ba_ballot3" value="12" /> Arne Löffer
+<input type="radio" name="ba_ballot1" value="12" /> Arne Löffer
 <br>
-<input type="radio" name="ba_ballot3" value="13" /> Zofia Wójcik
+<input type="radio" name="ba_ballot1" value="13" /> Zofia Wójcik
 <br>
-<input type="radio" name="ba_ballot3" value="14" /> Michael Kramer
+<input type="radio" name="ba_ballot1" value="14" /> Michael Kramer
 
 <br>
 
