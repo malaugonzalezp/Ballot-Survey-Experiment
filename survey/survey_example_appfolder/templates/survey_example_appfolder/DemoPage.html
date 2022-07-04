@@ -7,51 +7,95 @@
 
 {% block content %}
 <br>
-<h2> Survey Test </h2>
+<h2> Demographic Information </h2>
 <hr>
 Some demographic information about you:
 
 <br>
 
-{{ formfield "please_state_your_age"}}
-
-
 <br>
-<p><b>What is the highest level of education that you completed?</b></p>
-<input type="radio" name="ba_education" value="1" /> None or primary education
+<p><b>Welcher Partei stehen Sie traditionell am nächsten?</b></p>
+<input type="radio" name="party_preference" value="1" /> SPD
 <br>
-<input type="radio" name="ba_education" value="2" /> Secondary education
+<input type="radio" name="party_preference" value="2" /> CDU/CSU
 <br>
-<input type="radio" name="ba_education" value="3" /> Higher non-university education
+<input type="radio" name="party_preference" value="3" /> Bündnis 90 - Die Grünen
 <br>
-<input type="radio" name="ba_education" value="4" /> Higher university education
+<input type="radio" name="party_preference" value="4" /> AfD
 <br>
-<input type="radio" name="ba_education" value="5" /> Don't know
+<input type="radio" name="party_preference" value="5" /> FDP
 <br>
-<input type="radio" name="ba_education" value="6" /> I prefer not to say
+<input type="radio" name="party_preference" value="6" /> Die Linke
 <br>
-
+<input type="radio" name="party_preference" value="7" /> Eine andere Partei
 <br>
-
-{{ formfield "please_state_your_postal_code"}}
-
-
+<input type="radio" name="party_preference" value="5" /> Ich würde nicht wählen
 <br>
-<p><b>What is your gender?</b></p>
-<input type="radio" name="ba_gender" value="1" /> Male
+<input type="radio" name="party_preference" value="6" /> Ich bin nicht wahlberechtigt
 <br>
-<input type="radio" name="ba_gender" value="2" /> Female
-<br>
-<input type="radio" name="ba_gender" value="3" /> Diverse
-<br>
-<input type="radio" name="ba_gender" value="4" /> Prefer not to say
-<br>
-<input type="radio" name="ba_gender" value="5" /> Other
-<br>
+<input type="radio" name="party_preference" value="7" /> Keine Antwort
 <br>
 
 
-<input type="hidden" name="ba_hidden_input">
+<br>
+<p><b>Wie hoch ist ihr monatliches Netto-Haushaltseinkommen?</b></p>
+<input type="radio" name="household_income" value="1" /> < €10.000
+<br>
+<input type="radio" name="household_income" value="2" /> €10.001 - €20.000
+<br>
+<input type="radio" name="household_income" value="3" /> €20.001 - €30.000
+<br>
+<input type="radio" name="household_income" value="4" /> €30.001 - €40.000
+<br>
+<input type="radio" name="household_income" value="5" /> €40.001 - €50.000
+<br>
+<input type="radio" name="household_income" value="6" /> > €50.001
+<br>
+<input type="radio" name="household_income" value="7" /> > Keine Angabe
+<br>
+
+<br>
+<p><b>Sind Sie in Deutschland wahlberechtigt?</b></p>
+<input type="radio" name="eligibility" value="1" /> Ja
+<br>
+<input type="radio" name="eligibility" value="2" /> Nein
+<br>
+<input type="radio" name="eligibility" value="3" /> Keine Angabe
+<br>
+
+<br>
+<p><b>Haben Sie bereits an Wahlen teilgenommen?</b></p>
+<input type="radio" name="participation" value="1" /> Ja
+<br>
+<input type="radio" name="participation" value="2" /> Nein
+<br>
+<input type="radio" name="participation" value="3" /> Keine Angabe
+<br>
+
+<br>
+<p><b>Nutzen Sie Social-Media Plattformen?
+    Falls ja wählen Sie im Folgenden die von Ihnen genutzten Plattformen aus.</b></p>
+<input type="radio" name="social_media" value="1" /> Facebook
+<br>
+<input type="radio" name="social_media" value="2" /> Twitter
+<br>
+<input type="radio" name="social_media" value="3" /> Instagram
+<br>
+<input type="radio" name="social_media" value="4" /> LinkedIn
+<br>
+<input type="radio" name="social_media" value="5" /> Sonstige
+<br>
+<input type="radio" name="social_media" value="6" /> Ich benutze keine Social-Media Plattformen
+<br>
+<br>
+
+{{ formfield "In_welchem_Land_sind_Sie_geboren"}}
+
+{{ formfield "In_welchem_Land_ist_Ihre_Mutter_geboren"}}
+
+{{ formfield "In_welchem_Land_ist_Ihr_Vater_geboren"}}
+
+<br>
 
 <button class="otree-btn-next btn btn-primary next-button otree-next-button">
     Weiter

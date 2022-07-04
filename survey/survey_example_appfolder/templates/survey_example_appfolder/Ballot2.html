@@ -13,180 +13,60 @@
 
 {% block title %}
 
-Ballot
+{% endblock %}
+
+{% block scripts %}
 {% endblock %}
 
 {% block content %}
+
+<br>
 
 <h1>Ballot Test with Picture</h1>
 
 <br>
 
-<p>Please take a look at the following ballot:</p>
+<p><b>Sie nehmen an einer Direktwahl zum/zur Bürgermeister/in einem deutschen Stadtstaat teil.
+    Im Folgenden sehen Sie den Wahlzettel.</b></p>
 
 <!-- Ballot gender 1  -->
 
-<img   width="50%" height="50%" src="{% static 'images/OfficialBallot1.png' %}" />
+<img   width="35%" height="35%" src="{% static 'images/OfficialBallot1.png' %}" />
 <br>
 
 <br>
-<p><b>Which candidate would you vote for?</b></p>
+<p><b>Sie haben eine Stimme. Welche/n Kandidaten/in (parteilos!) würden Sie wählen?
+    Bitte setzen Sie entsprechend ihr Kreuz:</b></p>
 
-<input type="radio" name="ba_ballot_pic1" value="1" /> Michael Kramer
+<input type="radio" name="ba_ballot_pic1" value="1" /> 1. Michael Kramer
 <br>
-<input type="radio" name="ba_ballot_pic1" value="2" /> Niels Connemann
+<input type="radio" name="ba_ballot_pic1" value="2" /> 2. Niels Connemann
 <br>
-<input type="radio" name="ba_ballot_pic1" value="3" /> Andreas Verlinden
+<input type="radio" name="ba_ballot_pic1" value="3" /> 3. Sophia Stephan
 <br>
-<input type="radio" name="ba_ballot_pic1" value="4" /> Sonja Felser
+<input type="radio" name="ba_ballot_pic1" value="4" /> 4. Andreas Verlinden
 <br>
-<input type="radio" name="ba_ballot_pic1" value="5" /> Dietmar Gerdes
+<input type="radio" name="ba_ballot_pic1" value="5" /> 5. Sonja Felser
 <br>
-<input type="radio" name="ba_ballot_pic1" value="6" /> Linda Hardt
+<input type="radio" name="ba_ballot_pic1" value="6" /> 6. Linda Hardt
 <br>
-<input type="radio" name="ba_ballot_pic1" value="7" /> Karsten Hofmann
+<input type="radio" name="ba_ballot_pic1" value="7" /> 7. Karsten Hofmann
 <br>
-<input type="radio" name="ba_ballot_pic1" value="8" /> Markus Koeppen
+<input type="radio" name="ba_ballot_pic1" value="8" /> 8. Markus Koeppen
 <br>
-<input type="radio" name="ba_ballot_pic1" value="9" /> Lisa Weber
+<input type="radio" name="ba_ballot_pic1" value="9" /> 9. Lisa Weber
 <br>
-<input type="radio" name="ba_ballot_pic1" value="10" /> Manuela Kluckert
+<input type="radio" name="ba_ballot_pic1" value="10" /> 10. Manuela Kluckert
 <br>
-<input type="radio" name="ba_ballot_pic1" value="11" /> Dietmar Seitzl
+<input type="radio" name="ba_ballot_pic1" value="11" /> 11. Dietmar Seitzl
 <br>
-<input type="radio" name="ba_ballot_pic1" value="12" /> Dagmar Stecker
+<input type="radio" name="ba_ballot_pic1" value="12" /> 12. Dagmar Stecker
 <br>
-<input type="radio" name="ba_ballot_pic1" value="13" /> Alexander von Wilbrandt
+<input type="radio" name="ba_ballot_pic1" value="13" /> 13. Alexander von Wilbrandt
 <br>
-<input type="radio" name="ba_ballot_pic1" value="14" /> Emma Schneider
-
-<br>
-
-<br>
-
-<p>Please take a look at the following ballot:</p>
-
-<!-- Ballot gender 2  -->
-
-<img   width="50%" height="50%" src="{% static 'images/OfficialBallot2.png' %}" />
-<br>
+<input type="radio" name="ba_ballot_pic1" value="14" /> 14. Emma Schneider
 
 <br>
-<p><b>Which candidate would you vote for?</b></p>
-
-<input type="radio" name="ba_ballot_pic1" value="1" /> Dagmar Stecker
-<br>
-<input type="radio" name="ba_ballot_pic1" value="2" /> Markus Koeppen
-<br>
-<input type="radio" name="ba_ballot_pic1" value="3" /> Dietmar Gerdes
-<br>
-<input type="radio" name="ba_ballot_pic1" value="4" /> Sonja Felser
-<br>
-<input type="radio" name="ba_ballot_pic1" value="5" /> Karsten Hofmann
-<br>
-<input type="radio" name="ba_ballot_pic1" value="6" /> Emma Schneider
-<br>
-<input type="radio" name="ba_ballot_pic1" value="7" /> Niels Connemann
-<br>
-<input type="radio" name="ba_ballot_pic1" value="8" /> Dietmar Seitzl
-<br>
-<input type="radio" name="ba_ballot_pic1" value="9" /> Andreas Verlinden
-<br>
-<input type="radio" name="ba_ballot_pic1" value="10" /> Linda Hardt
-<br>
-<input type="radio" name="ba_ballot_pic1" value="11" /> Michael Kramer
-<br>
-<input type="radio" name="ba_ballot_pic1" value="12" /> Manuela Kluckert
-<br>
-<input type="radio" name="ba_ballot_pic1" value="13" /> Alexander von Wilbrandt
-<br>
-<input type="radio" name="ba_ballot_pic1" value="14" /> Lisa Weber
-
-<br>
-
-
-<p>Please take a look at the following ballot:</p>
-
-<!-- Ballot migrationalback 3  -->
-
-<img   width="50%" height="50%" src="{% static 'images/OfficialBallot3.png' %}" />
-<br>
-
-<br>
-<p><b>Which candidate would you vote for?</b></p>
-
-<input type="radio" name="ba_ballot_pic1" value="1" /> Michael Kramer
-<br>
-<input type="radio" name="ba_ballot_pic1" value="2" /> Zeynep Aslan
-<br>
-<input type="radio" name="ba_ballot_pic1" value="3" /> Niels Connemann
-<br>
-<input type="radio" name="ba_ballot_pic1" value="4" /> Mustafa Ahmed
-<br>
-<input type="radio" name="ba_ballot_pic1" value="5" /> Andreas Verlinden
-<br>
-<input type="radio" name="ba_ballot_pic1" value="6" /> Sonja Felser
-<br>
-<input type="radio" name="ba_ballot_pic1" value="7" /> Zofia Wójcik
-<br>
-<input type="radio" name="ba_ballot_pic1" value="8" /> Dietmar Gerdes
-<br>
-<input type="radio" name="ba_ballot_pic1" value="9" /> Linda Hardt
-<br>
-<input type="radio" name="ba_ballot_pic1" value="10" /> Mohamed Özdemir
-<br>
-<input type="radio" name="ba_ballot_pic1" value="11" /> Jekaterina Ljudmilla
-<br>
-<input type="radio" name="ba_ballot_pic1" value="12" /> Arne Löffer
-<br>
-<input type="radio" name="ba_ballot_pic1" value="13" /> Shlomo Rosenkranz
-<br>
-<input type="radio" name="ba_ballot_pic1" value="14" /> Chaim Friedländer
-
-<br>
-
-<br>
-
-<p>Please take a look at the following ballot:</p>
-
-<!-- Ballot migrationalback 4  -->
-
-<img   width="50%" height="50%" src="{% static 'images/OfficialBallot4.png' %}" />
-<br>
-
-<br>
-<p><b>Which candidate would you vote for?</b></p>
-
-<input type="radio" name="ba_ballot_pic1" value="1" /> Mustafa Ahmed
-<br>
-<input type="radio" name="ba_ballot_pic1" value="2" /> Jekaterina Ljudmilla
-<br>
-<input type="radio" name="ba_ballot_pic1" value="3" /> Linda Hardt
-<br>
-<input type="radio" name="ba_ballot_pic1" value="4" /> Mohamed Özdemir
-<br>
-<input type="radio" name="ba_ballot_pic1" value="5" /> Dietmar Gerdes
-<br>
-<input type="radio" name="ba_ballot_pic1" value="6" /> Sonja Felser
-<br>
-<input type="radio" name="ba_ballot_pic1" value="7" /> Zeynep Aslan
-<br>
-<input type="radio" name="ba_ballot_pic1" value="8" /> Chaim Friedländer
-<br>
-<input type="radio" name="ba_ballot_pic1" value="9" /> Andreas Verlinden
-<br>
-<input type="radio" name="ba_ballot_pic1" value="10" /> Shlomo Rosenkranz
-<br>
-<input type="radio" name="ba_ballot_pic1" value="11" /> Niels Connemann
-<br>
-<input type="radio" name="ba_ballot_pic1" value="12" /> Arne Löffer
-<br>
-<input type="radio" name="ba_ballot_pic1" value="13" /> Zofia Wójcik
-<br>
-<input type="radio" name="ba_ballot_pic1" value="14" /> Michael Kramer
-
-<br>
-
 
 <br>
 <hr>
