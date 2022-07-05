@@ -8,6 +8,21 @@ class Welcome(Page):
     def before_next_page(self):
         self.group.counter += 1
 
+class DemoPage(Page):
+    form_model = Player
+    form_fields = ['party_preference1', 'party_preference2', 'party_preference3', 'party_preference4',
+                   'party_preference5', 'party_preference6', 'eligibility', 'participation']
+
+class DemoPage2(Page):
+    form_model = Player
+    form_fields = ['demonstration_participation_allowed', 'demonstration_participation_notallowed',
+                   'demonstration_participation_online', 'social_media']
+
+class DemoPage3(Page):
+    form_model = Player
+    form_fields = ['household_income', 'general_education', 'ba_location', 'In_welchem_Land_sind_Sie_geboren',
+                   'In_welchem_Land_ist_Ihre_Mutter_geboren', 'In_welchem_Land_ist_Ihr_Vater_geboren']
+
 #ballot as a table
 
 class Ballot1(Page):
@@ -25,7 +40,7 @@ class Ballot2(Page):
         return {'ba_group_assignment': safe_json(self.player.ba_group_assignment)}
 
 
-# group 0 will get ideology page before ballot
+# group 0 will get ideology1 page before ballot
 
 class Ideology1(Page):
     form_model = Player
@@ -38,7 +53,7 @@ class Ideology1(Page):
         return self.player.ba_ideology_assignment == 0
     
 
-# group 1 will get ideology page after ballot
+# group 1 will get ideology2 page after ballot
 
 class Ideology2(Page):
     form_model = Player
@@ -50,13 +65,6 @@ class Ideology2(Page):
     def is_displayed(self):
         return self.player.ba_ideology_assignment == 1
 
-class DemoPage(Page):
-    form_model = Player
-    form_fields = ['party_preference', 'household_income', 'eligibility', 'participation', 'social_media',
-                   'In_welchem_Land_sind_Sie_geboren', 'In_welchem_Land_ist_Ihre_Mutter_geboren',
-                   'In_welchem_Land_ist_Ihr_Vater_geboren']
-
-#change order of ballot page
 
 class EndPage(Page):
 
@@ -64,6 +72,8 @@ class EndPage(Page):
 
 page_sequence = [Welcome,
                 DemoPage,
+                DemoPage2,
+                DemoPage3,
                 Ideology1,
                 Ballot1,
                 Ballot2,

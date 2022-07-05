@@ -36,16 +36,26 @@ class Player(BasePlayer):
     # Variables in order
     ba_group_assignment = models.IntegerField()
     ba_ideology_assignment = models.IntegerField()
-    ba_ballot1 = models.IntegerField(initial=-999)
-    ba_ballot_pic1 = models.IntegerField(initial=-999)
-    party_preference = models.IntegerField(initial=-999)
+    party_preference1 = models.IntegerField(initial=-999)
+    party_preference2 = models.IntegerField(initial=-999)
+    party_preference3 = models.IntegerField(initial=-999)
+    party_preference4 = models.IntegerField(initial=-999)
+    party_preference5 = models.IntegerField(initial=-999)
+    party_preference6 = models.IntegerField(initial=-999)
     household_income = models.IntegerField(initial=-999)
+    general_education = models.IntegerField(initial=-999)
+    ba_location = models.IntegerField(initial=-999)
     In_welchem_Land_sind_Sie_geboren = models.StringField(blank=True)
     In_welchem_Land_ist_Ihre_Mutter_geboren = models.StringField(blank=True)
     In_welchem_Land_ist_Ihr_Vater_geboren = models.StringField(blank=True)
     eligibility = models.IntegerField(initial=-999)
     participation = models.IntegerField(initial=-999)
+    demonstration_participation_allowed = models.IntegerField(initial=-999)
+    demonstration_participation_notallowed = models.IntegerField(initial=-999)
+    demonstration_participation_online = models.IntegerField(initial=-999)
     social_media = models.IntegerField(initial=-999)
+    ba_ballot1 = models.IntegerField(initial=-999)
+    ba_ballot_pic1 = models.IntegerField(initial=-999)
     ba_positioning = models.IntegerField(initial=-999)
     ba_party_pos = models.IntegerField(initial=-999)
     ba_opinion1 = models.IntegerField(initial=-999)
@@ -80,5 +90,5 @@ class Player(BasePlayer):
     # 2) have a specific name "variablename"_error_message
     def please_state_your_age_error_message(player, value):
         if value < 18:
-            return 'You are too young to participate in this survey!'
+            return 'Sie sind zu jung, um an dieser Umfrage teilzunehmen!'
 
