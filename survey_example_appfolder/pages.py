@@ -20,7 +20,7 @@ class DemoPage2(Page):
 
 class DemoPage3(Page):
     form_model = Player
-    form_fields = ['household_income', 'general_education', 'ba_location', 'In_welchem_Land_sind_Sie_geboren',
+    form_fields = ['household_income', 'general_education', 'ba_location', 'ba_immigration1',
                    'In_welchem_Land_ist_Ihre_Mutter_geboren', 'In_welchem_Land_ist_Ihr_Vater_geboren']
 
 #ballot as a table

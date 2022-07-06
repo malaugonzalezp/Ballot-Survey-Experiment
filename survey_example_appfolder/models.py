@@ -45,7 +45,7 @@ class Player(BasePlayer):
     household_income = models.IntegerField(initial=-999)
     general_education = models.IntegerField(initial=-999)
     ba_location = models.IntegerField(initial=-999)
-    In_welchem_Land_sind_Sie_geboren = models.StringField(blank=True)
+    ba_immigration1 = models.StringField(blank=True)
     In_welchem_Land_ist_Ihre_Mutter_geboren = models.StringField(blank=True)
     In_welchem_Land_ist_Ihr_Vater_geboren = models.StringField(blank=True)
     eligibility = models.IntegerField(initial=-999)
