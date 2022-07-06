@@ -75,7 +75,6 @@ page_sequence = [Welcome,
                 DemoPage2,
                 DemoPage3,
                 Ideology1,
-                Ballot1,
                 Ballot2,
                 Ideology2,
                 EndPage]
